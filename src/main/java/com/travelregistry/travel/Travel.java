@@ -43,4 +43,8 @@ public class Travel {
     public float getDistanceBetweenOriginAndDestiny() {
         return distanceBetweenOriginAndDestiny;
     }
+
+    public TravelDto toDto() {
+        return new TravelDto(this.origin, this.destiny, this.distanceBetweenOriginAndDestiny);
+    }
 }
