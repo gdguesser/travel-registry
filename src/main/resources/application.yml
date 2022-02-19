@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    name: 'postgres'
+    password: 'postgres'
+    url:
