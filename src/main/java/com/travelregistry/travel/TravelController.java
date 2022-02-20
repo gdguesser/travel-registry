@@ -27,10 +27,6 @@ public class TravelController {
         List<Travel> travelsList = travelRepository.findAll();
         List<TravelDto> travelsDtoList = new ArrayList<>();
 
-        DistanceCalculator distanceCalculator = new DistanceCalculator();
-
-        System.out.println(distanceCalculator.distance(-26.2697733, -48.8343821, 41.1621416, -8.6394632, "K") + " Kilometers");
-
         if (!travelsList.isEmpty()) {
             for (Travel travel : travelsList) {
                 travelsDtoList.add(travel.toDto());
